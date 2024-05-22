@@ -11,7 +11,11 @@ public class Main {
 		//üsünte component anotasyonu bulunanı çalıştırır
 		Calisan calisan = context.getBean("calisan",Calisan.class);
 		
+		//Bu da configürasyon sınıfında belirttiğimiz bean üzerine çalışıyor
+		Calisan calisan2 = context.getBean("calisan2",Calisan.class);
+		
 		calisan.run();
+		calisan2.run();
 	}
 
 }
