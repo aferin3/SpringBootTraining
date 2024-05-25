@@ -7,7 +7,7 @@ public class Main {
 	public static void main(String[] args) {
 	
 		AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(AnnotationConfig.class);
-
+		
 		//üsünte component anotasyonu bulunanı çalıştırır
 		Calisan calisan = context.getBean("calisan",Calisan.class);
 		
@@ -16,6 +16,7 @@ public class Main {
 		
 		calisan.run();
 		calisan2.run();
+		context.close();
 	}
 
 }
