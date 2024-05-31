@@ -21,9 +21,7 @@ public class CruddemoApplication {
 	public CommandLineRunner commandLineRunner(StudentDAO studentDAO){
 
 		return runner -> {
-			//deleteStudent(studentDAO);
-
-			deleteAllStudents(studentDAO);
+			createMultipleStudents(studentDAO);
 		};
 	}
 

@@ -14,7 +14,7 @@ import jakarta.persistence.TypedQuery;
 @Repository
 public class StudentDAOImpl implements StudentDAO {
 
-    //define fiel for entity manager
+    //define field for entity manager
     private EntityManager entityManager;
 
     //inject entity manager using constructor injection
