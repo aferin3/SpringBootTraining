@@ -1,6 +1,7 @@
 package com.fidan.cruddemo.entity;
 
 import jakarta.persistence.*;
+import org.hibernate.annotations.Check;
 
 @Entity
 @Table(name = "student")
@@ -10,6 +11,8 @@ public class Student {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private int id;
+
+
 
     @Column(name = "first_name")
     private String firstName;
